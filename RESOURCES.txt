@@ -1,1 +1,1 @@
-shader for outline - https://stackoverflow.com/a/71821621
+shader for outline - https://www.reddit.com/r/Unity3D/comments/19b69oo/making_an_outline_with_shader_graph_gaps_on/
