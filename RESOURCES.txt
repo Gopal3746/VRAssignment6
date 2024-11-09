@@ -1,1 +1,2 @@
 shader for outline - https://www.reddit.com/r/Unity3D/comments/19b69oo/making_an_outline_with_shader_graph_gaps_on/
+sparking particle system - https://www.youtube.com/watch?v=HV3g--GyEW0
