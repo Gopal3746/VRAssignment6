@@ -3,6 +3,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private float startingTimeSec;
+    [SerializeField] private Animator firstDoor;
+    [SerializeField] private Animator exitDoor;
 
     public static GameManager Instance;
     public float TimeLeft { get; private set; }
@@ -22,6 +24,16 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         TimeLeft = startingTimeSec;
+    }
+
+    public void OpenFirstDoor()
+    {
+        firstDoor.SetTrigger("Open");
+    }
+
+    public void OpenExitDoor()
+    {
+        exitDoor.SetTrigger("Open");
     }
 
     void FixedUpdate()

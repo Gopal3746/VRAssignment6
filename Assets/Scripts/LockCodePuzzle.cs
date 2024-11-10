@@ -70,6 +70,7 @@ public class LockCodePuzzle : MonoBehaviour
 
     private void OpenDoor()
     {
-        Debug.Log("Opening door"); // TODO: implement
+        Debug.Log("Opening door");
+        GameManager.Instance.OpenFirstDoor();
     }
 }
