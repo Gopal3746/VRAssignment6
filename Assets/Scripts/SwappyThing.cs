@@ -7,6 +7,7 @@ public class SwappyThing : RayTappableObject
 
     protected override void TriggerAction()
     {
+        base.TriggerAction();
         animator.SetTrigger("Swap");
     }
 }

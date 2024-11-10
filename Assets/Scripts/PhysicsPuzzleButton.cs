@@ -8,6 +8,7 @@ public class PhysicsPuzzleButton : RayTappableObject
 
     protected override void TriggerAction()
     {
+        base.TriggerAction();
         //Debug.Log("summoned ball");
         PhysicsPuzzleBall created = Instantiate(ballPrefab, ballPosition + physicsPuzzle.transform.position, Quaternion.identity, physicsPuzzle.transform);
         created.PuzzleObject = physicsPuzzle;

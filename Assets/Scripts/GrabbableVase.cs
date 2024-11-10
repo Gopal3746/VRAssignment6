@@ -7,6 +7,7 @@ public class GrabbableVase : RayTappableObject
 
     protected override void TriggerAction()
     {
+        base.TriggerAction();
         // nothing, we only care about it being placed on the correct pedestal
     }
 

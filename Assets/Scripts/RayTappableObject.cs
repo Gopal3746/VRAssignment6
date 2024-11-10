@@ -1,3 +1,4 @@
+using Oculus.Haptics;
 using Oculus.Interaction;
 using UnityEngine;
 
@@ -5,14 +6,17 @@ public abstract class RayTappableObject : MonoBehaviour
 {
     [SerializeField, Interface(typeof(IInteractableView))] private Object interactableView;
     [SerializeField] private GameObject hoverObject;
+    [SerializeField] private HapticClip hapticClip;
 
     private IInteractableView _interactableView;
     private InteractableState previousState;
+    private HapticClipPlayer hapticPlayer;
 
     protected void Start()
     {
         _interactableView = interactableView as IInteractableView;
         previousState = InteractableState.Normal;
+        hapticPlayer = new HapticClipPlayer(hapticClip);
     }
 
     protected void Update()
@@ -33,5 +37,20 @@ public abstract class RayTappableObject : MonoBehaviour
         previousState = currentState;
     }
 
-    protected abstract void TriggerAction();
+    protected virtual void TriggerAction()
+    {
+
+        bool rightPressed = OVRInput.Get(OVRInput.RawButton.RIndexTrigger);
+        bool leftPressed = OVRInput.Get(OVRInput.RawButton.LIndexTrigger);
+        if (rightPressed && leftPressed)
+        {
+            hapticPlayer.Play(Controller.Both);
+        } else if (leftPressed)
+        {
+            hapticPlayer.Play(Controller.Left);
+        } else
+        {
+            hapticPlayer.Play(Controller.Right);
+        }
+    }
 }

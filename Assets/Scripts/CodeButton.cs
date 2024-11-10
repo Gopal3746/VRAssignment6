@@ -7,6 +7,7 @@ public class CodeButton : RayTappableObject
 
     protected override void TriggerAction()
     {
+        base.TriggerAction();
         lockCodePuzzle.PressNumber(myNumber);
     }
 }

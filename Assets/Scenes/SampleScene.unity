@@ -979,6 +979,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactableView: {fileID: 1198411090}
   hoverObject: {fileID: 613458042}
+  hapticClip: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
   isCorrectVase: 0
   hintObject: {fileID: 0}
 --- !u!54 &121223639
@@ -2360,37 +2361,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &267278291
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 267278292}
-  m_Layer: 0
-  m_Name: BalancePuzzle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &267278292
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 267278291}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.61, y: 1.1161456, z: 0.35}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &267729339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2443,6 +2413,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9093270424117496688, guid: ff6b0f839e4cb694e897fec4b4f5d6e3, type: 3}
+      propertyPath: hapticClip
+      value: 
+      objectReference: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2610,7 +2584,7 @@ GameObject:
   - component: {fileID: 290361314}
   - component: {fileID: 290361313}
   m_Layer: 0
-  m_Name: ingsoc (1)
+  m_Name: controls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2878,6 +2852,10 @@ PrefabInstance:
       propertyPath: myNumber
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4424255275216224572, guid: d0686114bebbe774fa72b35fc980f6a6, type: 3}
+      propertyPath: hapticClip
+      value: 
+      objectReference: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
     - target: {fileID: 4424255275216224572, guid: d0686114bebbe774fa72b35fc980f6a6, type: 3}
       propertyPath: lockCodePuzzle
       value: 
@@ -8567,6 +8545,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9093270424117496688, guid: ff6b0f839e4cb694e897fec4b4f5d6e3, type: 3}
+      propertyPath: hapticClip
+      value: 
+      objectReference: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9160,6 +9142,10 @@ PrefabInstance:
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4424255275216224572, guid: d0686114bebbe774fa72b35fc980f6a6, type: 3}
+      propertyPath: hapticClip
+      value: 
+      objectReference: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
+    - target: {fileID: 4424255275216224572, guid: d0686114bebbe774fa72b35fc980f6a6, type: 3}
       propertyPath: lockCodePuzzle
       value: 
       objectReference: {fileID: 1445450522}
@@ -9272,6 +9258,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9093270424117496688, guid: ff6b0f839e4cb694e897fec4b4f5d6e3, type: 3}
+      propertyPath: hapticClip
+      value: 
+      objectReference: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9312,6 +9302,38 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 235562061}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &496649854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 496649855}
+  m_Layer: 0
+  m_Name: NoJumpZone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &496649855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496649854}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -7.47}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 558475514}
+  m_Father: {fileID: 1325335115}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &506051688
 GameObject:
@@ -9494,6 +9516,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9093270424117496688, guid: ff6b0f839e4cb694e897fec4b4f5d6e3, type: 3}
+      propertyPath: hapticClip
+      value: 
+      objectReference: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9598,6 +9624,85 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1205266025}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &558475513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 558475514}
+  - component: {fileID: 558475517}
+  - component: {fileID: 558475516}
+  - component: {fileID: 558475515}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &558475514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558475513}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5029, y: 1.47, z: 0.1741}
+  m_LocalScale: {x: 8.786307, y: 3.69, z: 7.6741724}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 496649855}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!208 &558475515
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558475513}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!65 &558475516
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558475513}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &558475517
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558475513}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &558628729
 GameObject:
   m_ObjectHideFlags: 0
@@ -9941,6 +10046,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9093270424117496688, guid: ff6b0f839e4cb694e897fec4b4f5d6e3, type: 3}
+      propertyPath: hapticClip
+      value: 
+      objectReference: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10397,6 +10506,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9093270424117496688, guid: ff6b0f839e4cb694e897fec4b4f5d6e3, type: 3}
+      propertyPath: hapticClip
+      value: 
+      objectReference: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12158,6 +12271,10 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4424255275216224572, guid: d0686114bebbe774fa72b35fc980f6a6, type: 3}
+      propertyPath: hapticClip
+      value: 
+      objectReference: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
+    - target: {fileID: 4424255275216224572, guid: d0686114bebbe774fa72b35fc980f6a6, type: 3}
       propertyPath: lockCodePuzzle
       value: 
       objectReference: {fileID: 1445450522}
@@ -12303,8 +12420,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactableView: {fileID: 786451055}
   hoverObject: {fileID: 464336824}
+  hapticClip: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
   ballPrefab: {fileID: 8607627870447181257, guid: 5651ecbeee4c9d543956b5b24584a03d, type: 3}
-  ballPosition: {x: -0.785, y: 2.878, z: 0.109}
+  ballPosition: {x: -0.785, y: 3.167, z: 0.109}
   physicsPuzzle: {fileID: 1305111348}
 --- !u!65 &786451057
 BoxCollider:
@@ -13060,6 +13178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactableView: {fileID: 1315377687}
   hoverObject: {fileID: 859704946}
+  hapticClip: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
   isCorrectVase: 0
   hintObject: {fileID: 0}
 --- !u!54 &838483033
@@ -13187,8 +13306,8 @@ Transform:
   m_GameObject: {fileID: 849641924}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.93, y: 0.37, z: 0.52}
-  m_LocalScale: {x: 1, y: 4, z: 4}
+  m_LocalPosition: {x: 1.93, y: 0.37, z: 0.4658}
+  m_LocalScale: {x: 1, y: 4, z: 4.1084}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 83830921}
@@ -14120,6 +14239,89 @@ Transform:
   - {fileID: 670062850}
   m_Father: {fileID: 1945690059}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &919632022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 919632023}
+  - component: {fileID: 919632025}
+  - component: {fileID: 919632024}
+  m_Layer: 0
+  m_Name: bigbrother (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &919632023
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919632022}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.039909553, y: -0.70597243, z: 0.039910365, w: 0.70598686}
+  m_LocalPosition: {x: 5.06, y: 2.484, z: 11.962}
+  m_LocalScale: {x: 2.5, y: 1.75, z: 0.2036}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1208669318}
+  m_LocalEulerAnglesHint: {x: 0, y: -89.999, z: 6.471}
+--- !u!23 &919632024
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919632022}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 2cf3f04203b83e045803277b8276643b, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &919632025
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919632022}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &921897288
 GameObject:
   m_ObjectHideFlags: 0
@@ -14882,6 +15084,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9093270424117496688, guid: ff6b0f839e4cb694e897fec4b4f5d6e3, type: 3}
+      propertyPath: hapticClip
+      value: 
+      objectReference: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14944,6 +15150,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9093270424117496688, guid: ff6b0f839e4cb694e897fec4b4f5d6e3, type: 3}
+      propertyPath: hapticClip
+      value: 
+      objectReference: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15312,6 +15522,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4424255275216224572, guid: d0686114bebbe774fa72b35fc980f6a6, type: 3}
+      propertyPath: hapticClip
+      value: 
+      objectReference: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
+    - target: {fileID: 4424255275216224572, guid: d0686114bebbe774fa72b35fc980f6a6, type: 3}
       propertyPath: lockCodePuzzle
       value: 
       objectReference: {fileID: 1445450522}
@@ -15676,6 +15890,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactableView: {fileID: 1152871093}
   hoverObject: {fileID: 1227885801}
+  hapticClip: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
   isCorrectVase: 0
   hintObject: {fileID: 0}
 --- !u!54 &1043929970
@@ -16707,6 +16922,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4424255275216224572, guid: d0686114bebbe774fa72b35fc980f6a6, type: 3}
+      propertyPath: hapticClip
+      value: 
+      objectReference: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
+    - target: {fileID: 4424255275216224572, guid: d0686114bebbe774fa72b35fc980f6a6, type: 3}
       propertyPath: lockCodePuzzle
       value: 
       objectReference: {fileID: 1445450522}
@@ -16814,6 +17033,10 @@ PrefabInstance:
       propertyPath: myNumber
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4424255275216224572, guid: d0686114bebbe774fa72b35fc980f6a6, type: 3}
+      propertyPath: hapticClip
+      value: 
+      objectReference: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
     - target: {fileID: 4424255275216224572, guid: d0686114bebbe774fa72b35fc980f6a6, type: 3}
       propertyPath: lockCodePuzzle
       value: 
@@ -17291,6 +17514,7 @@ Transform:
   - {fileID: 78609338}
   - {fileID: 290361312}
   - {fileID: 1357732239}
+  - {fileID: 919632023}
   - {fileID: 305459257}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17448,6 +17672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactableView: {fileID: 909734488}
   hoverObject: {fileID: 677167685}
+  hapticClip: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
   isCorrectVase: 0
   hintObject: {fileID: 0}
 --- !u!54 &1216818445
@@ -18807,6 +19032,7 @@ Transform:
   - {fileID: 603752442}
   - {fileID: 83830921}
   - {fileID: 1209306884}
+  - {fileID: 496649855}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1331900218
@@ -20846,8 +21072,8 @@ Transform:
   m_GameObject: {fileID: 1562019941}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.02, y: 0.18, z: 0.57}
-  m_LocalScale: {x: 1, y: 4, z: 4}
+  m_LocalPosition: {x: -2.02, y: 0.18, z: 0.4834}
+  m_LocalScale: {x: 1, y: 4, z: 4.1732}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 83830921}
@@ -23349,6 +23575,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9093270424117496688, guid: ff6b0f839e4cb694e897fec4b4f5d6e3, type: 3}
+      propertyPath: hapticClip
+      value: 
+      objectReference: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23996,6 +24226,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4424255275216224572, guid: d0686114bebbe774fa72b35fc980f6a6, type: 3}
+      propertyPath: hapticClip
+      value: 
+      objectReference: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
+    - target: {fileID: 4424255275216224572, guid: d0686114bebbe774fa72b35fc980f6a6, type: 3}
       propertyPath: lockCodePuzzle
       value: 
       objectReference: {fileID: 1445450522}
@@ -24613,6 +24847,10 @@ PrefabInstance:
       propertyPath: myNumber
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4424255275216224572, guid: d0686114bebbe774fa72b35fc980f6a6, type: 3}
+      propertyPath: hapticClip
+      value: 
+      objectReference: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
     - target: {fileID: 4424255275216224572, guid: d0686114bebbe774fa72b35fc980f6a6, type: 3}
       propertyPath: lockCodePuzzle
       value: 
@@ -25425,7 +25663,7 @@ Transform:
   m_GameObject: {fileID: 2078972496}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.752, y: 0.709, z: -0.249}
+  m_LocalPosition: {x: 3.029, y: 0.709, z: -0.249}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -25448,6 +25686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactableView: {fileID: 818186191}
   hoverObject: {fileID: 1683815006}
+  hapticClip: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
   isCorrectVase: 1
   hintObject: {fileID: 1017458721}
 --- !u!1 &2098347620
@@ -26155,6 +26394,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9093270424117496688, guid: ff6b0f839e4cb694e897fec4b4f5d6e3, type: 3}
+      propertyPath: hapticClip
+      value: 
+      objectReference: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26217,6 +26460,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9093270424117496688, guid: ff6b0f839e4cb694e897fec4b4f5d6e3, type: 3}
+      propertyPath: hapticClip
+      value: 
+      objectReference: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26462,6 +26709,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9093270424117496688, guid: ff6b0f839e4cb694e897fec4b4f5d6e3, type: 3}
+      propertyPath: hapticClip
+      value: 
+      objectReference: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26485,7 +26736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3666081650437079659, guid: 5651ecbeee4c9d543956b5b24584a03d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.878
+      value: 3.167
       objectReference: {fileID: 0}
     - target: {fileID: 3666081650437079659, guid: 5651ecbeee4c9d543956b5b24584a03d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26536,6 +26787,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CodeButton
       objectReference: {fileID: 0}
+    - target: {fileID: 4424255275216224572, guid: d0686114bebbe774fa72b35fc980f6a6, type: 3}
+      propertyPath: hapticClip
+      value: 
+      objectReference: {fileID: 2460798210113038985, guid: 3f52f7be47b03c0ca5fa3b3f981cc8c5, type: 3}
     - target: {fileID: 4424255275216224572, guid: d0686114bebbe774fa72b35fc980f6a6, type: 3}
       propertyPath: lockCodePuzzle
       value: 
@@ -26609,7 +26864,6 @@ SceneRoots:
   - {fileID: 1006086210663529501}
   - {fileID: 1293879697}
   - {fileID: 903009370}
-  - {fileID: 267278292}
   - {fileID: 1445450523}
   - {fileID: 514244181072465578}
   - {fileID: 1164437007}
