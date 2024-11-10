@@ -6,10 +6,10 @@ public class PhysicsPuzzleBall : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("collided with " + collision.collider.gameObject.name);
+        //Debug.Log("collided with " + collision.collider.gameObject.name);
         if (collision.collider.CompareTag("PhysicsPuzzleGoal"))
         {
-            Debug.Log("TODO WIN");
+            //Debug.Log("TODO WIN");
             PuzzleObject.Win();
         }
     }

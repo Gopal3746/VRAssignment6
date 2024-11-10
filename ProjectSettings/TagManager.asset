@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - PhysicsPuzzleGoal
+  - SamplesInfoPanel
+  - PlacingPuzzlePedestal
   layers:
   - Default
   - TransparentFX
