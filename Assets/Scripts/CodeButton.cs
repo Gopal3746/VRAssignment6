@@ -9,5 +9,6 @@ public class CodeButton : RayTappableObject
     {
         base.TriggerAction();
         lockCodePuzzle.PressNumber(myNumber);
+        GetComponent<AudioSource>().Play();
     }
 }

@@ -29,11 +29,13 @@ public class GameManager : MonoBehaviour
     public void OpenFirstDoor()
     {
         firstDoor.SetTrigger("Open");
+        firstDoor.GetComponent<AudioSource>().Play();
     }
 
     public void OpenExitDoor()
     {
         exitDoor.SetTrigger("Open");
+        firstDoor.GetComponent<AudioSource>().Play();
     }
 
     void FixedUpdate()
