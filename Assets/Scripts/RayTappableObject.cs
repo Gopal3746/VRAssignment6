@@ -23,7 +23,7 @@ public abstract class RayTappableObject : MonoBehaviour
     {
         //Debug.Log(_interactableView.State.ToString());
         InteractableState currentState = _interactableView.State;
-        if (previousState != InteractableState.Select && currentState == InteractableState.Select)
+        if (previousState != InteractableState.Select && currentState == InteractableState.Select && GameManager.Instance.gameActive)
         {
             TriggerAction();
         }
