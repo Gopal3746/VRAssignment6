@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
     public void OpenExitDoor()
     {
         exitDoor.SetTrigger("Open");
-        firstDoor.GetComponent<AudioSource>().Play();
+        exitDoor.GetComponent<AudioSource>().Play();
         gameActive = false;
     }
 
@@ -54,9 +54,12 @@ public class GameManager : MonoBehaviour
             Debug.Log("Lose! Ran out of time."); // TODO: implement losing logic
             foreach (GameObject obj in GameObject.FindGameObjectsWithTag("RoomLight"))
             {
-                obj.GetComponent<Light>().color = Color.red;
-                obj.GetComponent<Light>().intensity = 50;
-                obj.GetComponent<Light>().range = 15;
+                if (obj.TryGetComponent<Light>(out Light light))
+                {
+                    light.color = Color.red;
+                    light.intensity = 50;
+                    light.range = 15;
+                }
             }
             GetComponent<AudioSource>().Play();
         }

@@ -1,3 +1,6 @@
 shader for outline - https://www.reddit.com/r/Unity3D/comments/19b69oo/making_an_outline_with_shader_graph_gaps_on/
 sparking particle system - https://www.youtube.com/watch?v=HV3g--GyEW0
 shaking hands clipart (openclipart) - https://openclipart.org/detail/307282/shaking-hands-silhouette
+chess blender 3d model tutorial - https://youtu.be/LJGUGRcZRSc?si=V9_s9dUhWrBhohsZ
+mission accomplished sound effect - https://youtu.be/VmzvLoCXTHg?si=8rWo-CUKn-FDDT8t
+alarm sound effect - https://pixabay.com/sound-effects/security-alarm-63578/
