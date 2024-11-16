@@ -1,8 +1,8 @@
 # COMP 590-172 A6 - Escape Room
 
-Demo Video: [YouTube](https://google.com)
+Demo Video: [YouTube](https://youtu.be/GyR8hS03sx4)
 
-Play the game: [Releases](https://github.com/Gopal3746/VRAssignment6/releases/tag/v0.4) (download and install apk onto Meta Quest)
+Play the game: [Releases](https://github.com/Gopal3746/VRAssignment6/releases/tag/v0.5) (download and install apk onto Meta Quest)
 
 ![Screenshot of game](/screenshot.png)
 
@@ -12,7 +12,11 @@ You find yourself trapped in an unfamiliar room filled with strange posters and 
 
 ## Project information
 
-**Virtual Environment**: features two rooms and an open outside area if you are able to win.
+**Virtual Environment**:
+- Features two rooms and an open outside area if you are able to win.
+- We included a custom shader that is shown when you "hover" over an object that can be interacted with (grabbed or tapped). This shows a yellow outline which is achieved by rendering the BACK of the faces at a slight offset to their normal.
+- We added a particle system to the sparking light bulb to hopefully contribute to player presence.
+- We added several animations to make the gameplay a little more polished, such as the doors opening and closing, the helicopter blades turning, the hint opening smoothly, and the movable platforms switching smoothly.
 
 **Puzzles**: features three puzzles that you must complete within 10 minutes.
 
@@ -46,3 +50,12 @@ You find yourself trapped in an unfamiliar room filled with strange posters and 
 - Thumb stick forward: Teleport to pointed location
 - Thumb stick left/right: Jump rotate to left/right a little
 - Index (rear) trigger: Grab or tap object
+
+## Resources used
+
+- shader for outline - https://www.reddit.com/r/Unity3D/comments/19b69oo/making_an_outline_with_shader_graph_gaps_on/
+- sparking particle system - https://www.youtube.com/watch?v=HV3g--GyEW0
+- shaking hands clipart (openclipart) - https://openclipart.org/detail/307282/shaking-hands-silhouette
+- chest blender 3d model tutorial - https://youtu.be/LJGUGRcZRSc?si=V9_s9dUhWrBhohsZ
+- mission accomplished sound effect - https://youtu.be/VmzvLoCXTHg?si=8rWo-CUKn-FDDT8t
+- alarm sound effect - https://pixabay.com/sound-effects/security-alarm-63578/
